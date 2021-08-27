@@ -5,6 +5,7 @@ Le dossier où l'on effectue le boulot :)
 ## Liens utiles
 
 - [La base du html](https://html5boilerplate.com/)
+- Validateur w3C > installer plugin pour éditeur de texte !!
 - [Css: homogénéiser les différents navigateurs / normalize.css](https://necolas.github.io/normalize.css/)
 - [JS / Compatibilité](https://modernizr.com/)
 - [Git](https://www.gitkraken.com/)
@@ -22,3 +23,4 @@ Le dossier où l'on effectue le boulot :)
   - webp mais [attention](https://caniuse.com/?search=webp)
   - [xnview logiciel images](https://www.xnview.com/fr/)
 - Icone devant lire plus > [css ::before](https://developer.mozilla.org/fr/docs/Web/CSS/::before)
+- accessibilité : [aria label & roles](https://developer.mozilla.org/fr/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)

@@ -278,3 +278,10 @@ body {
 #slider-main li {
   text-transform: uppercase;
 }
+#slider-secondary h3 {
+  text-transform: uppercase;
+}
+#slider-secondary img {
+  height: 21px;
+  width: auto;
+}
