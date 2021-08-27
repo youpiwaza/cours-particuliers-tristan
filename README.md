@@ -1,7 +1,8 @@
 # Cours particuliers tristan
 
-Date du 27/08/2021, 2h.
+## Premier cours
 
-Intégration d'une maquette en mode mobile first + bonnes pratiques.
+Date du *27/08/2021*, 2h.
 
-Review de questions d'interview, méthodologie.
+- Intégration d'une maquette en mode mobile first + bonnes pratiques.
+- Review de questions d'interview, méthodologie.
