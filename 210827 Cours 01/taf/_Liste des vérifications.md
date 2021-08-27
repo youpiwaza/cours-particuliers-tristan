@@ -2,17 +2,18 @@
 
 - Intégration en responsive, mobile first
 - ✅♻️ Validation W3C
-- FontAwesome
+- ✅ FontAwesome
 - Résolutions 320px à 2048px
 - Un peu de JS slider, le menu mobile, la recherche
 - CSS > survol bouton
-- Images optimisées
-- JS > Pas d'erreur dans la console
+- ✅ Images optimisées
+- ✅♻️ JS > Pas d'erreur dans la console
 
 Livraison :
 
-1. ♻️ Validation W3C
-2. Créer un fichier .zip avec tous les fichiers nécessaires à la visualisation de l'intégration.
-3. L'upload sur le [site](https://wetransfer.com/)  et transmettre le lien aux adresses suivantes : marion.foulatier@fidesio.com et guillaume.bouillon@fidesio.com
+1. Validation W3C
+2. JS > Pas d'erreur dans la console
+3. Créer un fichier .zip avec tous les fichiers nécessaires à la visualisation de l'intégration.
+4. L'upload sur le [site](https://wetransfer.com/)  et transmettre le lien aux adresses suivantes : marion.foulatier@fidesio.com et guillaume.bouillon@fidesio.com
 
 - Engueuler graphiste > Footer > ATTENTION Supérieur_

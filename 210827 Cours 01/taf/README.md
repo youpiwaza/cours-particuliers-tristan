@@ -16,3 +16,8 @@ Le dossier où l'on effectue le boulot :)
 
 - [og](https://fr.wikipedia.org/wiki/Open_Graph_Protocol)
 - [site.webmanifest](https://developer.mozilla.org/fr/docs/Web/Manifest)
+- images optimisées
+  - [PNG > A l'ancienne](https://tinypng.com/)
+  - Jpg > compression 60 + progressif
+  - webp mais [attention](https://caniuse.com/?search=webp)
+  - [xnview logiciel images](https://www.xnview.com/fr/)
