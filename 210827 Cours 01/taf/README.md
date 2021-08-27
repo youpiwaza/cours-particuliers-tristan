@@ -9,6 +9,7 @@ Le dossier où l'on effectue le boulot :)
 - [JS / Compatibilité](https://modernizr.com/)
 - [Git](https://www.gitkraken.com/)
 - [favicon](http://favicon.htmlkit.com/)
+- [validation w3c](https://validator.w3.org/) > Validate by file upload (envoi du fichier html)
 
 ## Les trucs a regarder pour la culture
 
