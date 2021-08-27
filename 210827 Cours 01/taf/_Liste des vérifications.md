@@ -7,6 +7,7 @@
 - Un peu de JS slider, le menu mobile, la recherche
 - CSS > survol bouton
 - Images optimisées
+- JS > Pas d'erreur dans la console
 
 Livraison :
 

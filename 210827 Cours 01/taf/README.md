@@ -13,3 +13,4 @@ Le dossier où l'on effectue le boulot :)
 ## Les trucs a regarder pour la culture
 
 - [og](https://fr.wikipedia.org/wiki/Open_Graph_Protocol)
+- [site.webmanifest](https://developer.mozilla.org/fr/docs/Web/Manifest)
