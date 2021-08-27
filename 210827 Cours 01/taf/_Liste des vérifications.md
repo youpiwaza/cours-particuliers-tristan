@@ -12,6 +12,6 @@
 Livraison :
 
 - Créer un fichier .zip avec tous les fichiers nécessaires à la visualisation de l'intégration.
-- L'upload sur le site https://wetransfer.com/ et transmettre le lien aux adresses suivantes : marion.foulatier@fidesio.com et guillaume.bouillon@fidesio.com
+- L'upload sur le [site](https://wetransfer.com/)  et transmettre le lien aux adresses suivantes : marion.foulatier@fidesio.com et guillaume.bouillon@fidesio.com
 
 - Engueuler graphiste > Footer > ATTENTION Supérieur_
