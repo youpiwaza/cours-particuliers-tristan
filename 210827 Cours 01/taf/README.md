@@ -4,6 +4,7 @@ Le dossier où l'on effectue le boulot :)
 
 ## Liens utiles
 
+- [Les vidéos des cours en live](https://we.tl/t-qfVHTNWO1Y)
 - [La base du html](https://html5boilerplate.com/)
 - Validateur w3C > installer plugin pour éditeur de texte !!
 - [Css: homogénéiser les différents navigateurs / normalize.css](https://necolas.github.io/normalize.css/)
@@ -12,6 +13,7 @@ Le dossier où l'on effectue le boulot :)
 - [favicon](http://favicon.htmlkit.com/)
 - [validation w3c](https://validator.w3.org/) > Validate by file upload (envoi du fichier html)
 - [fontawesome pour les icones](https://fontawesome.com/)
+- [Envoyer des fichiers lourds](https://wetransfer.com/)
 
 ## Les trucs a regarder pour la culture
 
@@ -57,7 +59,7 @@ Liens :
 - fouiller + concret [ARIA attribut role](https://www.anysurfer.be/fr/documentation/articles/detail/aria-lattribut-role#:~:text=Certains%20r%C3%B4les%20correspondent%20s%C3%A9mantiquement%20%C3%A0,exemple%20role%3D%22tablist%20%22.)
 - [ARIA label](https://developer.mozilla.org/fr/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
 
-## Ce que j'ai retenu :
+## Ce que j'ai retenu
 
 Le web pour les personnes handicapées : aveugles, sourds, dyslexiques.
 
@@ -67,7 +69,7 @@ Outils : lecteurs d'écrans > Le logiciel "lit" le site et le transmet "[en parl
 
 Aria = Accessible Rich Internet Applications (ARIA) : Un attribut (HMTL) attribut > complète HTML sur éléments interactifs
 
-2 trucs qui resortent : 
+2 trucs qui resortent :
 
 - [attribut role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role)
 - attribut aria-label
