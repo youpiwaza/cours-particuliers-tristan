@@ -17,3 +17,5 @@ Livraison :
 4. L'upload sur le [site](https://wetransfer.com/)  et transmettre le lien aux adresses suivantes : marion.foulatier@fidesio.com et guillaume.bouillon@fidesio.com
 
 - Engueuler graphiste > Footer > ATTENTION Supérieur_
+- Pas de H1 gros titre pour le ref ?
+- Pas de menu supérieur ?

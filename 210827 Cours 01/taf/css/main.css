@@ -261,6 +261,20 @@ textarea {
   }
 }
 
+/* Max */
+/* balises */
 body {
   background-color: salmon;
+  padding: 5em;
+}
+
+/* classes */
+.read-more::before {
+  content: ">";
+  margin-right: 0.5em;
+}
+
+/* id */
+#slider-main li {
+  text-transform: uppercase;
 }

@@ -21,3 +21,4 @@ Le dossier où l'on effectue le boulot :)
   - Jpg > compression 60 + progressif
   - webp mais [attention](https://caniuse.com/?search=webp)
   - [xnview logiciel images](https://www.xnview.com/fr/)
+- Icone devant lire plus > [css ::before](https://developer.mozilla.org/fr/docs/Web/CSS/::before)
