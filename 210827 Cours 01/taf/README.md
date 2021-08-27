@@ -10,6 +10,7 @@ Le dossier où l'on effectue le boulot :)
 - [Git](https://www.gitkraken.com/)
 - [favicon](http://favicon.htmlkit.com/)
 - [validation w3c](https://validator.w3.org/) > Validate by file upload (envoi du fichier html)
+- [fontawesome pour les icones](https://fontawesome.com/)
 
 ## Les trucs a regarder pour la culture
 
