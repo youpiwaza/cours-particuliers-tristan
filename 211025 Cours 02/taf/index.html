@@ -25,9 +25,18 @@
   <!-- Styles / Css -->
   <!-- Compatibilité -->
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- Font awesome -->
-  <link href="./css/all.min.css" rel="stylesheet"> <!--load all styles -->
 
+  <!-- Vendeurs / Trucs récupérés d'ailleurs -->
+  <!-- Font awesome -->
+  <link href="./css/all.min.css" rel="stylesheet">
+  <!-- Carte & géolocalisation / Leaflet map markers -->
+  <!--    https://leafletjs.com/examples/quick-start/#preparing-your-page -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+
+
+  <!-- Notre site -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -178,6 +187,10 @@
     <!-- Carte et adresse -->
     <div id="localization">
       <!-- Carte avec géolocalisation -->
+      <!-- 
+        Alternative à googlemaps
+            https://leafletjs.com/examples/quick-start/
+      -->
       <div id="map">
 
       <!-- #map -->
@@ -208,15 +221,21 @@
   <script src="js/plugins.js"></script>
   <!-- <script src="https://kit.fontawesome.com/bc5a83f567.js" crossorigin="anonymous"></script> -->
 
-  <!-- Notre Js -->
-  <script src="js/main.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <!-- <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+
+  <!-- Carte & géolocalisation / Leaflet map markers -->
+  <!--    https://leafletjs.com/examples/quick-start/#preparing-your-page -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+  <!-- Notre Js -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
