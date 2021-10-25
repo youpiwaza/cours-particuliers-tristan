@@ -285,3 +285,10 @@ body {
   height: 21px;
   width: auto;
 }
+
+/* Carte & géolocalisation / Leaflet map markers */
+/*    https://leafletjs.com/examples/quick-start/#preparing-your-page */
+#mapid {
+  height: 320px;
+  width: 410px;
+}
