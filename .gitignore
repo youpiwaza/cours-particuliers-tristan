@@ -1,0 +1,5 @@
+# Ne pas sauvegarder les fichiers photoshp^, parce que c'est trop lourd :'(
+*.psd
+
+# Ne pas sauvegarder les fichiers copiés à l'arrache
+*- Copie*
