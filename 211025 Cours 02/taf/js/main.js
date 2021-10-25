@@ -4,6 +4,9 @@ console.log('main.js');
 //     https://leafletjs.com/examples/quick-start/#preparing-your-page
 // ! La hauteur et la largeur sont fixées en CSS
 
+// Remplir atitude longitude
+//      Utilise ce site https://www.latlong.net/ > Mettre l'adresse comme sur googlemaps
+
 // * Variables
 const latitude          = 48.833660;
 const longitude         = 2.357510;
