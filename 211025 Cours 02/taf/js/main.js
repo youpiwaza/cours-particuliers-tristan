@@ -5,12 +5,12 @@ console.log('main.js');
 // ! La hauteur et la largeur sont fixées en CSS
 
 // * Variables
-const latitude          = 51.505;
-const longitude         = -0.09;
-const latitudeMarqueur  = 51.505;
-const longitudeMarqueur = -0.09;
+const latitude          = 48.833660;
+const longitude         = 2.357510;
+const latitudeMarqueur  = 48.833660;
+const longitudeMarqueur = 2.357510;
 const tokenCleALaConSituLaMetPasCaMarchePas = 'pk.eyJ1IjoibWFzYW11bmUiLCJhIjoiY2tmd25qYm9rMWZpYzJyczg1cGhnYmN6diJ9.HzSEnM6ecdFbNrZzCWApIA';
-const zoom              = 13;
+const zoom              = 12;
 // La latitude & la longitude
 
 // On crée une nouvelle carte
@@ -39,6 +39,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 // On rajoute un marqueur
 let marker = L.marker([latitudeMarqueur, longitudeMarqueur]).addTo(maCarte);
+
+// La popup du marker
+// marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 
 // // On rajoute un cerle
 // let circle = L.circle([51.508, -0.11], {
