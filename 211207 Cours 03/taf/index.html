@@ -18,6 +18,14 @@
 
   <link rel="manifest" href="./site.webmanifest">
 
+  <!-- Polices -->
+  <!-- Roboto & Merriweather -->
+  <!-- https://fonts.google.com/specimen/Roboto -->
+  <!-- https://fonts.google.com/specimen/Merriweather -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico" >
   <link rel="apple-touch-icon" href="apple-touch-icon.png" >
@@ -41,14 +49,20 @@
 </head>
 
 <body>
+
   <!-- <h1>École Nationale Supérieure des Arts et Métiers 2021</h1> -->
-  
-  <header>
+
+  <!-- Exemple d'éléments a la con qui font sauter le design, voir mes resets a mwa dans le css -->
+  <!-- <p>uneMottrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestre strestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrest restrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestrestreslong</p> -->
+
+  <!-- <img src="./img/grande-image.jpg" alt=""> -->
+
+  <header class="container-fluid">
     <!-- Grosse Partie du dessus -->
-    <div id="slider-main">
+    <div id="slider-main" class="container">
       <nav>
         <ul>
-          <li>École</li>
+          <li class="active">École</li>
           <li>Robotique</li>
           <li>Industrie du futur</li>
         </ul>
@@ -64,178 +78,182 @@
     </div>
   </header>
 
-  <main>
-    <!-- Le petit slider -->
-    <div id="slider-secondary">
-      <button class="previous" role="button" aria-label="Précedent"><i class="fas fa-angle-left"></i></button>
-      <section>
+    <main>
+      <!-- Le petit slider -->
+      <div id="slider-secondary" class="container-fluid">
+        <button class="previous" role="button" aria-label="Précedent"><i class="fas fa-angle-left"></i></button>
+        <section>
+          
+          <article>
+            <h3 role="heading">Partenariat <img src="./img/deal.svg" title="Faire une bonne affaire" alt="Mains qui se serrent"></h3>
+            <div>Schneider Electric s'engage dans la campagne de mécénat d'Arts et Métiers</div>
+            <div class="read-more"><a href="#" title="En savoir plus">Lire plus</a></div>
+          </article>
+
+          <article>
+            <h3 role="heading">École <img src="./img/university.svg" title="Une école réputée" alt="University building"></h3>
+            <div>Qualité et responsabilité sociale des entreprises</div>
+            <div class="read-more"><a href="#" title="En savoir plus">Lire plus</a></div>
+          </article>
+
+          <article>
+            <h3 role="heading">Portrait <img src="./img/book.svg" title="Apprendre grâce a des livres" alt="Un livre ouvert"></h3>
+            <div>Ma vie d'étudiante à Arts et Métiers : Julie, en Bachelor de technologie à Bordeaux</div>
+            <div class="read-more"><a href="#" title="En savoir plus">Lire plus</a></div>
+          </article>
+
+        </section>
+        <button class="next" role="button" aria-label="Suivant"><i class="fas fa-angle-right"></i></button>
+      <!-- /#slider-secondary -->
+      </div>
+
+      <div class="container">
+      <!-- Les listes en bas à gauche -->
+      <div id="lists">
+
+        <!-- Liste des liens -->
+        <div id="linkLists">
+
+          <!-- .linkList>h4{XXX}+ul>li>a[href=#]{XXX} -->
+          <!-- (.linkList>h4{XXX}+ul>(li>a[href=#]{XXX})*5)*4 -->
+
+          <div class="linkList">
+            <h4>École</h4>
+            <ul>
+              <li><a href="#">Présentation</a></li>
+              <li><a href="#">Réseau Arts et Métiers partenaires</a></li>
+              <li><a href="#">Une école engagée</a></li>
+              <li><a href="#">Les campus Arts et Métiers</a></li>
+              <li><a href="#">International</a></li>
+              <li><a href="#">Agenda</a></li>
+              <li><a href="#">Actualités</a></li>
+              <li><a href="#">L'école recrute</a></li>
+              <li><a href="#">Marchés publics</a></li>
+            </ul>
+          </div>
+
+          <div class="linkList">
+            <h4>Formation</h4>
+            <ul>
+              <li><a href="#">Bachelor de technologie</a></li>
+              <li><a href="#">Ingénieur généraliste</a></li>
+              <li><a href="#">Ingénieur de spécialité</a></li>
+              <li><a href="#">Mastères recherche</a></li>
+              <li><a href="#">Mastères spécialisés et MBA</a></li>
+              <li><a href="#">Doctorat</a></li>
+              <li><a href="#">Étudiants internationaux</a></li>
+              <li><a href="#">Formation tout au long de la vie</a></li>
+              <li><a href="#">MOOCS</a></li>
+              <li><a href="#">Vie étudiante</a></li>
+            </ul>
+          </div>
+
+          <div class="linkList">
+            <h4>Recherche</h4>
+            <ul>
+              <li><a href="#">Filières de recherche</a></li>
+              <li><a href="#">Les réseaux nationaux de la connaissance (RNC)</a></li>
+              <li><a href="#">Recherche partenariale</a></li>
+              <li><a href="#">Publications</a></li>
+            </ul>
+          </div>
+
+          <div class="linkList">
+            <h4>Entreprise</h4>
+            <ul>
+              <li><a href="#">Recruter nos étudiants</a></li>
+              <li><a href="#">Soutenir l'école</a></li>
+              <li><a href="#">Transfert et valorisation</a></li>
+              <li><a href="#">Entrepreneuriat</a></li>
+              <li><a href="#">Former vos collaborateurs</a></li>
+              <li><a href="#">Organiser un évènement</a></li>
+            </ul>
+          </div>
+
+          <!-- /#linkLists -->
+        </div>
         
-        <article>
-          <h3 role="heading">Partenariat <img src="./img/deal.svg" title="Faire une bonne affaire" alt="Mains qui se serrent"></h3>
-          <div>Schneider Electric s'engage dans la campagne de mécénat d'Arts et Métiers</div>
-          <div class="read-more"><a href="#" title="En savoir plus">Lire plus</a></div>
-        </article>
+        <!-- Liste de liens des sponsors -->
+        <ul id="linkSponsors">
+          <!-- (li>a[href=# target=_blank]>img[src=# title=hey alt=hey]{XXX})*3 -->
+          <li>
+            <a href="https://www.ic-arts.eu/" target="_blank" title="Visiter le site de l'Institut Carnot Arts">
+              <img alt="Logo de l'Institut Carnot Arts" src="./img/logo-institut-carnot-arts.png" title="Institut Carnot Arts" />
+            </a>
+          </li>
 
-        <article>
-          <h3 role="heading">École <img src="./img/university.svg" title="Une école réputée" alt="University building"></h3>
-          <div>Qualité et responsabilité sociale des entreprises</div>
-          <div class="read-more"><a href="#" title="En savoir plus">Lire plus</a></div>
-        </article>
+          <li>
+            <a href="https://www.paristech.fr/fr" target="_blank" title="Visiter le site de Paris tech">
+              <img alt="Logo de Paris tech, texte : Institut des sciences et technologies, paris institute of technology" src="./img/logo-paris-tech.png" title="Paris tech Institut des sciences" />
+            </a>
+          </li>
 
-        <article>
-          <h3 role="heading">Portrait <img src="./img/book.svg" title="Apprendre grâce a des livres" alt="Un livre ouvert"></h3>
-          <div>Ma vie d'étudiante à Arts et Métiers : Julie, en Bachelor de technologie à Bordeaux</div>
-          <div class="read-more"><a href="#" title="En savoir plus">Lire plus</a></div>
-        </article>
+          <li>
+            <a href="https://www.hesam.eu/" target="_blank" title="Visiter le site de heSam université">
+              <img alt="Logo de heSam université" src="./img/logo-hesam-universite.png" title="heSam université" />
+            </a>
+          </li>
 
-      </section>
-      <button class="next" role="button" aria-label="Suivant"><i class="fas fa-angle-right"></i></button>
-    <!-- /#slider-secondary -->
-    </div>
-
-    <!-- Les listes en bas à gauche -->
-    <div id="lists">
-
-      <!-- Liste des liens -->
-      <div id="linkLists">
-
-        <!-- .linkList>h4{XXX}+ul>li>a[href=#]{XXX} -->
-        <!-- (.linkList>h4{XXX}+ul>(li>a[href=#]{XXX})*5)*4 -->
-
-        <div class="linkList">
-          <h4>École</h4>
-          <ul>
-            <li><a href="#">Présentation</a></li>
-            <li><a href="#">Réseau Arts et Métiers partenaires</a></li>
-            <li><a href="#">Une école engagée</a></li>
-            <li><a href="#">Les campus Arts et Métiers</a></li>
-            <li><a href="#">International</a></li>
-            <li><a href="#">Agenda</a></li>
-            <li><a href="#">Actualités</a></li>
-            <li><a href="#">L'école recrute</a></li>
-            <li><a href="#">Marchés publics</a></li>
-          </ul>
-        </div>
-
-        <div class="linkList">
-          <h4>Formation</h4>
-          <ul>
-            <li><a href="#">Bachelor de technologie</a></li>
-            <li><a href="#">Ingénieur généraliste</a></li>
-            <li><a href="#">Ingénieur de spécialité</a></li>
-            <li><a href="#">Mastères recherche</a></li>
-            <li><a href="#">Mastères spécialisés et MBA</a></li>
-            <li><a href="#">Doctorat</a></li>
-            <li><a href="#">Étudiants internationaux</a></li>
-            <li><a href="#">Formation tout au long de la vie</a></li>
-            <li><a href="#">MOOCS</a></li>
-            <li><a href="#">Vie étudiante</a></li>
-          </ul>
-        </div>
-
-        <div class="linkList">
-          <h4>Recherche</h4>
-          <ul>
-            <li><a href="#">Filières de recherche</a></li>
-            <li><a href="#">Les réseaux nationaux de la connaissance (RNC)</a></li>
-            <li><a href="#">Recherche partenariale</a></li>
-            <li><a href="#">Publications</a></li>
-          </ul>
-        </div>
-
-        <div class="linkList">
-          <h4>Entreprise</h4>
-          <ul>
-            <li><a href="#">Recruter nos étudiants</a></li>
-            <li><a href="#">Soutenir l'école</a></li>
-            <li><a href="#">Transfert et valorisation</a></li>
-            <li><a href="#">Entrepreneuriat</a></li>
-            <li><a href="#">Former vos collaborateurs</a></li>
-            <li><a href="#">Organiser un évènement</a></li>
-          </ul>
-        </div>
-
-        <!-- /#linkLists -->
-      </div>
-      
-      <!-- Liste de liens des sponsors -->
-      <ul id="linkSponsors">
-        <!-- (li>a[href=# target=_blank]>img[src=# title=hey alt=hey]{XXX})*3 -->
-        <li>
-          <a href="https://www.ic-arts.eu/" target="_blank" title="Visiter le site de l'Institut Carnot Arts">
-            <img alt="Logo de l'Institut Carnot Arts" src="./img/logo-institut-carnot-arts.png" title="Institut Carnot Arts" />
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.paristech.fr/fr" target="_blank" title="Visiter le site de Paris tech">
-            <img alt="Logo de Paris tech, texte : Institut des sciences et technologies, paris institute of technology" src="./img/logo-paris-tech.png" title="Paris tech Institut des sciences" />
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.hesam.eu/" target="_blank" title="Visiter le site de heSam université">
-            <img alt="Logo de heSam université" src="./img/logo-hesam-universite.png" title="heSam université" />
-          </a>
-        </li>
-
-      <!-- /#linkSponsors -->
-      </ul>
-    <!-- /#lists -->
-    </div>
-
-    <!-- Carte et adresse -->
-    <div id="localization">
-      <!-- Carte avec géolocalisation -->
-      <!-- 
-        Alternative à googlemaps
-            https://leafletjs.com/examples/quick-start/
-
-        Pour faire une jolie carte
-        1. Il faut du HTML  > <div id="mapid"></div>
-        2. Du css           > #mapid { height: 180px; }
-        3. Du js            > /taf/js/main.js
-      -->
-      <div id="map">
-        <!-- https://leafletjs.com/examples/quick-start/#preparing-your-page -->
-        <div id="mapid"></div>
-      <!-- /#map -->
+        <!-- /#linkSponsors -->
+        </ul>
+      <!-- /#lists -->
       </div>
 
-      <!-- Nom de Adresse de la boîte -->
-      <div id="libelle">
-        <img src="./img/pin.png" alt="Logo ENSAM">
-        <div class="text">
-          École Nationale<br>
-          Supérieur des<br> 
-          Arts et Métiers
-        </div>
-      <!-- /#libelle -->
-      </div>
+      <!-- Carte et adresse -->
+      <div id="localization">
+        <!-- Carte avec géolocalisation -->
+        <!-- 
+          Alternative à googlemaps
+              https://leafletjs.com/examples/quick-start/
 
-      <!-- Coordonnées -->
-      <div id="adressAndCampus">
-        <div class="campus">
-          <label for="idCampus">Campus : </label>
-          <select name="campus" id="idCampus">
-            <option value="paris" selected>Paris</option>
-            <option value="autre">autre</option>
-            <option value="autre">autre</option>
-            <option value="autre">autre</option>
-          </select>
+          Pour faire une jolie carte
+          1. Il faut du HTML  > <div id="mapid"></div>
+          2. Du css           > #mapid { height: 180px; }
+          3. Du js            > /taf/js/main.js
+        -->
+        <div id="map">
+          <!-- https://leafletjs.com/examples/quick-start/#preparing-your-page -->
+          <div id="mapid"></div>
+        <!-- /#map -->
         </div>
-        <div class="adress">
-          151, boulevard de l’Hôpital, 75013 Paris<br>
-          Tél : 33 (0)1 44 24 62 99<br>
-          Métro : Place d’Italie
+
+        <!-- Nom de Adresse de la boîte -->
+        <div id="libelle">
+          <img src="./img/pin.png" alt="Logo ENSAM">
+          <div class="text">
+            École Nationale<br>
+            Supérieur des<br> 
+            Arts et Métiers
+          </div>
+        <!-- /#libelle -->
         </div>
-      <!-- /#adress -->
+
+        <!-- Coordonnées -->
+        <div id="adressAndCampus">
+          <div class="campus">
+            <label for="idCampus">Campus : </label>
+            <select name="campus" id="idCampus">
+              <option value="paris" selected>Paris</option>
+              <option value="autre">autre</option>
+              <option value="autre">autre</option>
+              <option value="autre">autre</option>
+            </select>
+          </div>
+          <div class="adress">
+            151, boulevard de l’Hôpital, 75013 Paris<br>
+            Tél : 33 (0)1 44 24 62 99<br>
+            Métro : Place d’Italie
+          </div>
+        <!-- /#adress -->
+        </div>
+      <!-- #localization -->
       </div>
-    <!-- #localization -->
+    
+    <!-- /.container -->
     </div>
   </main>
 
-  <footer>
+  <footer class="container-fluid">
     <div class="copyright">© École Nationale Supérieur des Arts et Métiers 2021</div>
     <ul class="menu">
         <li>Rejoignez-nous</li>
@@ -245,7 +263,7 @@
     </ul>
     <div class="brand">Masamune</div>
   </footer>
-  
+    
   <!-- Javascript -->
   <!-- Le Js d'ailleurs / librairies -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

@@ -1,5 +1,14 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
+/* ! Notes couleurs utilisées */
+/*
+ * Menu :
+ *    Jaune   : #f19400
+ *    Violet  : #8d2463
+*/
+
+
+
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -262,10 +271,53 @@ textarea {
 }
 
 /* Max */
+/* Resets a mwa */
+/* Sur l'ensemble des éléments */
+* {
+	/* Prevent text overflows */
+	/* Ref : https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */ 
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	
+	/* Prevent margin/padding anarchy */
+	box-sizing: border-box;
+}
+
+/* Prevent images from overflowing parent containers */
+img {
+  /* Respect du ratio de l'image */
+	height: auto;
+	max-width: 100%;
+}
+
 /* balises */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100%;
+}
+
 body {
-  background-color: salmon;
-  padding: 5em;
+  background-color: #0074D9;
+  font-family: 'Merriweather', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
 }
 
 /* classes */
@@ -291,4 +343,93 @@ body {
 #mapid {
   height: 320px;
   width: 410px;
+}
+
+/* Conteneurs */
+/* Des marges assez élevées et un contenu centré sur les plus grandes résolutions */
+
+/* sur mobile on ne perd pas de place */
+.container {
+  /* background-color: rgba(255,255,255, 0.5); */
+  /* Marges sur les côté uniquement */
+  min-width: 100%;
+  padding: 0 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+.container p {
+  text-align: justify;
+}
+
+/* ~Au cune marge de marge pour fort contenu horizontal */
+.container-fluid {
+  min-width: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+header.container-fluid {
+  /* Attention, chemin relatif a la position de main.css dans l'arborescence, a savoir dans le dssier /css */
+  /* Donc on ressort (.. de /css PUIS on va dans /img) */
+  background-image: url('./../img/ecole-ensa-background.jpg');
+  background-size: cover;
+}
+
+#slider-main ul {
+  padding-left: 0;
+}
+#slider-main li {
+  background-color: #8d2463;
+  color: #fbfbfb;
+  font-family: 'Roboto', sans-serif;
+  /* font-size: 13px; */
+  /* https://nekocalc.com/fr/px-a-rem-convertisseur */
+  font-size: 0.813rem;
+  /* font-weight: 500; */
+  list-style-type: none;
+  margin-bottom: 5px;
+  max-width: 180px;
+  padding: 10px 6px;
+}
+  #slider-main li.active {
+    background-color:#f19400;
+  }
+
+/* CSS BEFORE / AFTER */
+/* https://developer.mozilla.org/fr/docs/Web/CSS/::before */
+/* https://outils-css.aliasdmc.fr/generateur-de-triangles-css.php */
+
+
+/*    Tablette */ 
+/* PAS VRAI : Entre 720 et 1199px */
+/* VRAI : a partir de 720px et plus SAUF en cas de surcharge/remplacement   */
+@media screen and (min-width: 720px) {
+  .container {
+    max-width: 680px;
+    /* Centrer le contenu de manière hozitale */
+    margin: 0 auto;
+    /* On retire le min-width du portable */
+    min-width: initial;
+  }
+
+  /* Uniquement A PARTIR DE la tablette, le menu du slider devient hozirontal */
+  #slider-main li {
+    display: inline-block;
+  }
+}
+
+
+
+/*    ~PC */ 
+/* PAS VRAI : 1200 et + */
+/* VRAI : a partir de 1200px et plus SAUF en cas de surcharge/remplacement  */
+@media screen and (min-width: 1290px) {
+  .container {
+    max-width: 1180px;
+    text-align: left;
+  }
+
+  .container-fluid {
+    text-align: left;
+  }
 }

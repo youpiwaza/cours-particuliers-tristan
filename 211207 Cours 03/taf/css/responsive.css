@@ -29,3 +29,10 @@ body {
     font-size: 1.5rem;
   }
 }
+
+
+a::before {
+  content: "♥";
+  color: red;
+  margin-right: 10px;
+}
