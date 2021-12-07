@@ -1,3 +1,31 @@
+/* @media screen and (min-width: 992px) { */
+
+/* Mobile first */
+
+/* Style sans contraintes */
+/*    Mobile */
+
+/* PAS VRAI : Entre 0 pixels et 719px */
+/* VRAI : Entre 0 pixels et plus SAUF en cas de surcharge/remplacement */
 body {
-  background-color: darksalmon;
+  background-color: blue;
+  font-size: 0.6rem;
+}
+
+/*    Tablette */ 
+/* PAS VRAI : Entre 720 et 1199px */
+/* VRAI : a partir de 720px et plus SAUF en cas de surcharge/remplacement   */
+@media screen and (min-width: 720px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+/*    ~PC */ 
+/* PAS VRAI : 1200 et + */
+/* VRAI : a partir de 1200px et plus SAUF en cas de surcharge/remplacement  */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.5rem;
+  }
 }

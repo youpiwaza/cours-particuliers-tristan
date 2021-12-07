@@ -1,0 +1,18 @@
+/* @media screen and (min-width: 992px) { */
+
+/* Si la largeur fait au maximum 992px */
+@media screen and (max-width: 992px) {
+  /* Ce style ne sera utilisé QUE < 992px */
+  body {
+    background-color: blue;
+  }
+}
+
+
+/* Le style sera appliqué A partir de l'écran fait 1200px de large */
+@media screen and (min-width: 1200px) {
+  /* Ce style ne sera utilisé QUE < 992px */
+  body {
+    background-color: red;
+  }
+}
