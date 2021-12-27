@@ -46,7 +46,23 @@
       margin-right: 1em;
     }
 
+    /* Sélectionner tous les before, 🚨 attention, pas une bonne pratique */
+    *::before {
+      color: blue;
     }
+
+    p::before {
+      /* On peut rajoute différents types de contenus, par exemple du texte */
+      /* content: "le bien le bonjour"; */
+      /* Ca marche également avec des emojis, vu qu'elles sont du texte maintenant */
+      content: "🎉";
+      /* 💩 KO / Le html n'est pas encore supporté */
+      /* content: '<span>test</span>'; */
+
+      margin-right: .5em;
+    }
+
+    
 
   </style>
 </head>
@@ -77,6 +93,15 @@
         <li>Quasi, minus tempore.</li>
       </ul>
     </article>
+
+    <!-- ((p>lorem20)*5) -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur sit possimus labore animi repellat vel numquam sequi similique libero?</p>
+    <p>Odio esse, impedit quo assumenda inventore dolore deleniti, rerum nihil ex debitis dolorem, ullam aperiam culpa voluptate placeat perferendis maiores!</p>
+    <p>Assumenda architecto dolorum incidunt laborum enim explicabo commodi pariatur nesciunt nostrum, vel, amet ut tempora saepe quam mollitia culpa modi.</p>
+    <p>Esse aut minima cupiditate, nam ullam, laboriosam velit dolorum voluptates rem iure accusantium omnis saepe deleniti magnam, officia officiis ea!</p>
+    <p>Molestiae minus maiores non deleniti natus. Quis dolore omnis dolorum possimus fugiat voluptatum architecto, quisquam veniam dolorem, corrupti expedita excepturi.</p>
+  </section>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
