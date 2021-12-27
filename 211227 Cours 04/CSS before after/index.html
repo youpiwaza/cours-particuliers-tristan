@@ -51,7 +51,8 @@
       color: blue;
     }
 
-    p::before {
+    /* Histoire de ne pas trop se mélanger les pinceaux, on met les exemples before dans une div de classe before */
+    .before p::before {
       /* On peut rajoute différents types de contenus, par exemple du texte */
       /* content: "le bien le bonjour"; */
       /* Ca marche également avec des emojis, vu qu'elles sont du texte maintenant */
@@ -62,7 +63,11 @@
       margin-right: .5em;
     }
 
-    
+    /* Les exemples after dans la classe .after */
+    .after p::after {
+      content: "🚀";
+      font-size: 3em;
+    }
 
   </style>
 </head>
@@ -94,12 +99,22 @@
       </ul>
     </article>
 
-    <!-- ((p>lorem20)*5) -->
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur sit possimus labore animi repellat vel numquam sequi similique libero?</p>
-    <p>Odio esse, impedit quo assumenda inventore dolore deleniti, rerum nihil ex debitis dolorem, ullam aperiam culpa voluptate placeat perferendis maiores!</p>
-    <p>Assumenda architecto dolorum incidunt laborum enim explicabo commodi pariatur nesciunt nostrum, vel, amet ut tempora saepe quam mollitia culpa modi.</p>
-    <p>Esse aut minima cupiditate, nam ullam, laboriosam velit dolorum voluptates rem iure accusantium omnis saepe deleniti magnam, officia officiis ea!</p>
-    <p>Molestiae minus maiores non deleniti natus. Quis dolore omnis dolorum possimus fugiat voluptatum architecto, quisquam veniam dolorem, corrupti expedita excepturi.</p>
+    <div class="before">
+      <!-- ((p>lorem20)*5) -->
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur sit possimus labore animi repellat vel numquam sequi similique libero?</p>
+      <p>Odio esse, impedit quo assumenda inventore dolore deleniti, rerum nihil ex debitis dolorem, ullam aperiam culpa voluptate placeat perferendis maiores!</p>
+      <p>Assumenda architecto dolorum incidunt laborum enim explicabo commodi pariatur nesciunt nostrum, vel, amet ut tempora saepe quam mollitia culpa modi.</p>
+      <p>Esse aut minima cupiditate, nam ullam, laboriosam velit dolorum voluptates rem iure accusantium omnis saepe deleniti magnam, officia officiis ea!</p>
+      <p>Molestiae minus maiores non deleniti natus. Quis dolore omnis dolorum possimus fugiat voluptatum architecto, quisquam veniam dolorem, corrupti expedita excepturi.</p>
+    </div>
+
+    <div class="after">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ipsam, unde cupiditate perspiciatis ullam ut iure ratione iste voluptate incidunt.</p>
+      <p>Quasi voluptatibus voluptas totam commodi rem autem consequatur necessitatibus sed beatae eaque soluta, voluptatum tenetur architecto. Quia placeat excepturi ipsam.</p>
+      <p>Saepe similique nemo minima laboriosam magni, quos eligendi! Sequi cupiditate officia laudantium voluptatum vel recusandae ipsum quam iure accusamus est.</p>
+      <p>Enim accusamus ipsam ratione corrupti perferendis omnis deserunt expedita reprehenderit quidem inventore, ea, iusto aliquam id dolores laborum vel nam.</p>
+      <p>Aliquid,emem molestias? Adipisci saepe ullam nemo, asperiores maxime ducimus deserunt omnis praesentium dicta iste, sequi non facere dolores eum eius.</p>
+    </div>
   </section>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
