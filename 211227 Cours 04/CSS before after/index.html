@@ -69,6 +69,26 @@
       font-size: 3em;
     }
 
+    /* @see: l'article correspondant : https://css-tricks.com/snippets/css/clear-fix/ */
+    /* A l'ancienne, ~grille avec float */
+    .floatLeft {
+      border: 1px solid black;
+      float: left;
+    }
+
+    /* Eviter le float des éléments suivant un float */
+    /* a l'ancienne */
+    /* .clearfix {
+      clear: both;
+    } */
+
+    /* La manière propre & actuelle, cf. l'article du dessus */
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
   </style>
 </head>
 
@@ -128,6 +148,18 @@
     <hr>
 
   </section>
+  
+  <!-- Cas particulier d'utilisateir de before/after : clearfix -->
+  <div class="alancienne">
+    <!-- 3 paragraphe les uns à côté des autres, puis un 4eme en dessous -->
+    <!-- (p.floatLeft>lorem5)*3 -->
+    <div class="clearfix">
+      <p class="floatLeft">Lorem ipsum dolor sit amet.</p>
+      <p class="floatLeft">Assumenda sequi non quisquam suscipit.</p>
+      <p class="floatLeft">Libero eum quo vel aliquid!</p>
+    </div>
+    <p class="apres">Le paragraphe en dessous</p>
+  </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
