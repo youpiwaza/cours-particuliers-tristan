@@ -30,7 +30,21 @@
       list-style-type: none;
     }
 
-    li {
+    /* Chacun de nos li, on va rajouter un élément html AVANT, qui va contnir le coeur */
+    /* li::before {
+      content: "♥";
+      color: red;
+      font-size: 1.2em;
+      margin-right: 1em;
+    } */
+
+    /* Je rajoute un élément AVANt les li, qui sont dans la classe coeur, des éléments ul */
+    ul.coeur li::before {
+      content: "♥";
+      color: red;
+      font-size: 1.2em;
+      margin-right: 1em;
+    }
 
     }
 
@@ -42,7 +56,7 @@
   <!-- Add your site or application content here -->
   <h1>Hello world! This is HTML5 Boilerplate.</h1>
 
-  <ul>
+  <ul class="coeur">
     <!-- (li>lorem3)*5 -->
     <li>Lorem, ipsum dolor.</li>
     <li>Dignissimos, distinctio? Excepturi.</li>
@@ -51,6 +65,18 @@
     <li>Repellendus, dolorum repudiandae!</li>
   </ul>
 
+  <section>
+    <article>
+      <h2>Le deuxième titre</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati facere at possimus magnam corporis, alias repellendus enim debitis veritatis provident est repudiandae cupiditate, consequuntur porro nostrum velit quam ullam eum. Eius alias expedita, rem corrupti iure magnam laborum natus saepe deserunt quibusdam porro aspernatur perferendis voluptatibus culpa, repudiandae quo iusto?</p>
+      <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Sint, a ut?</li>
+        <li>Consequuntur, eos dolore?</li>
+        <li>Esse, maxime autem!</li>
+        <li>Quasi, minus tempore.</li>
+      </ul>
+    </article>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
